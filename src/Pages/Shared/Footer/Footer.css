@@ -8,3 +8,32 @@
 .text-theme-primay{
     color: #faf9f9;
 }
+
+footer h4{
+    color: #dddddd;
+}
+.get-in-intro{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #8D8E92;
+}
+.get-in-touch ul li svg{
+    color: #007bff;
+}
+.get-in-touch ul li{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #8D8E92;
+}
+
+.quick-link li a{
+    font-size: 15px;
+    color: #8D8E92;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.quick-link li span {
+    color: #007bff;
+    font-size: 14px;
+}
+.quick-link li:hover a{
+    color: #007bff;
+}

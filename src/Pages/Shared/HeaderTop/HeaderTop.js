@@ -1,4 +1,4 @@
-import { faClock, faCoffee, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -18,7 +18,7 @@ const HeaderTop = () => {
                         <Row>
                             <Col lg={4} className="d-flex lg:justify-content-center">
                                 <div className="d-flex top-box align-items-center fs-6">
-                                    <span className="me-2 top-box-icon bg-info text-white p-1 rounded-circle"><FontAwesomeIcon icon={faClock} /> </span>
+                                    <span className="me-2 top-box-icon bg-info text-white md:p-1 rounded-circle"><FontAwesomeIcon icon={faClock} /> </span>
                                     <div>
                                         <p className="lh-sm fw-bolder pt-3">Work Time: 09:00-17.00 <br /> <span className="fw-normal">Saturday and Sunday - Closed</span></p>
                                     </div>
@@ -26,7 +26,7 @@ const HeaderTop = () => {
                             </Col>
                             <Col lg={4} className="d-flex lg:justify-content-center">
                                 <div className="d-flex top-box align-items-center fs-6">
-                                    <span className="me-2 top-box-icon bg-info text-white p-1 rounded-circle"> <FontAwesomeIcon icon={faEnvelope} /> </span>
+                                    <span className="me-2 top-box-icon bg-info text-white md:p-1 rounded-circle"> <FontAwesomeIcon icon={faEnvelope} /> </span>
                                     <div>
                                         <p className="lh-sm fw-bolder pt-3">Mail Us <br /> <span className="fw-normal">mail@curepoint.com</span></p>
                                     </div>
@@ -34,7 +34,7 @@ const HeaderTop = () => {
                             </Col>
                             <Col lg={4} className="d-flex lg:justify-content-center">
                                 <div className="d-flex top-box align-items-center fs-6">
-                                    <span className="me-2 top-box-icon bg-info text-white p-1 rounded-circle"><FontAwesomeIcon icon={faPhone} /> </span>
+                                    <span className="me-2 top-box-icon bg-info text-white md:p-1 rounded-circle"><FontAwesomeIcon icon={faPhone} /> </span>
                                     <div>
                                         <p className="lh-sm fw-bolder pt-3">Call Us <br /> <span className="fw-normal">(+088) 212 521 211</span></p>
                                     </div>
