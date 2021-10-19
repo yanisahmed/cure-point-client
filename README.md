@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Welcome to CurePoint
 
 [Live Link](https://cure-point.web.app/).
 [Repo Link](https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-yanisahmed).
