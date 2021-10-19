@@ -1,5 +1,6 @@
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
@@ -12,6 +13,19 @@ const Login = () => {
         signInUsingEmail(email, password);
     }
     const { singInUsingGoogle } = useAuth();
+    const location = useLocation();
+    console.log(location.state?.from);
+    const redirect_url = location.state?.from || '/';
+    let history = useHistory();
+
+    const handleGoogleLogin = () => {
+        singInUsingGoogle()
+            .then(result => {
+                history.push(redirect_url);
+            });
+    }
+
+
     return (
         <section className="my-4">
             <Container>
@@ -59,7 +73,7 @@ const Login = () => {
 
                                 </li> */}
                                 <li className="list-inline-item">
-                                    <Button onClick={singInUsingGoogle} className="bg-warning border-0 px-4 py-2">Google</Button>
+                                    <Button onClick={handleGoogleLogin} className="bg-warning border-0 px-4 py-2">Google</Button>
 
                                 </li>
                             </ul>

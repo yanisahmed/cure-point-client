@@ -15,10 +15,9 @@ const useFirebase = () => {
 
     const singInUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            });
+
+        return signInWithPopup(auth, googleProvider);
+
     }
 
     const signUpUsingEmail = (name, email, password) => {
@@ -28,7 +27,7 @@ const useFirebase = () => {
                 setUser(result.user);
                 updateEmailSignUpProfile(name);
                 setSignUpSuccess("Success! You have made it.")
-                history.push('./login');
+                history.push('/login');
             })
             .catch(error => {
                 // setError(error.message);
