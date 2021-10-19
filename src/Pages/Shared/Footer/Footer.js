@@ -65,10 +65,10 @@ const Footer = () => {
 
                             <div>
                                 <Form onSubmit={handleSubmit(onSubmit)}>
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Group className="mb-3" controlId="newsletterName">
                                         <Form.Control {...register("name")} type="text" placeholder="Enter Your Name" />
                                     </Form.Group>
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Group className="mb-3" controlId="newsletterEmail">
                                         <Form.Control {...register("email")} type="email" placeholder="Enter email" />
                                         <Form.Text className="text-muted">
                                             We'll never share your email with anyone else.

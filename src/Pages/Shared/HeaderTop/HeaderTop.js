@@ -2,6 +2,7 @@ import { faClock, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './HeaderTop.css';
 
 const HeaderTop = () => {
@@ -11,7 +12,7 @@ const HeaderTop = () => {
                 <Row className="border-bottom border-1">
                     <Col lg={4}>
                         <div className="logo pt-3">
-                            <h3><span className="text-primary">Cure</span>Point</h3>
+                            <h3><Link to="/"><span className="text-primary">Cure</span>Point</Link></h3>
                         </div>
                     </Col>
                     <Col lg={8}>

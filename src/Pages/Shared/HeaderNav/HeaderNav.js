@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const HeaderNav = () => {
+    const { user, logOut } = useAuth();
     return (
         <>
             <Navbar expand="lg">
@@ -23,8 +25,12 @@ const HeaderNav = () => {
                         </Nav>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                        <Nav.Link as={Link} to="/Register">Register</Nav.Link>
+                        {!user.displayName ? <span className="d-flex"><Nav.Link as={Link} to="/login">Login</Nav.Link>
+                            <Nav.Link as={Link} to="/signup">Register</Nav.Link></span> : <Navbar.Text>
+                            Signed in as: {user.displayName}<span onClick={logOut} type="button" className="ms-4 border border-2 px-2">Logout</span>
+
+                        </Navbar.Text>}
+
                         {/* <Navbar.Text>
                             Signed in as: <a href="#login">Mark Otto</a>
                         </Navbar.Text> */}
