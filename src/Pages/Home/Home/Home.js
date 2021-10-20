@@ -1,5 +1,6 @@
 import React from 'react';
 import Services from '../../Services/Services/Services';
+import About from '../About/About';
 import Banner from '../Banner/Banner';
 import Consultation from '../Consultation/Consultation';
 
@@ -12,8 +13,12 @@ const Home = () => {
             <section className="services mt-4">
                 <Services></Services>
             </section>
-            <section>
+
+            <section className="services mt-4">
                 <Consultation></Consultation>
+            </section>
+            <section className="services mt-4">
+                <About></About>
             </section>
         </>
     );
