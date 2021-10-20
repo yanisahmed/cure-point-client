@@ -10,7 +10,7 @@ const Service = (props) => {
     return (
         <Col lg={4} className="single-service mb-4">
             <img src={img_url} alt="" className="" />
-            <h3 className="">{name}</h3>
+            <h4 className="mt-2">{name}</h4>
             <p>{desc.substring(1, 100)}</p>
             <Link to={`/services/${id}`} >
                 <Button variant="warning" className="me-2">Details</Button>
