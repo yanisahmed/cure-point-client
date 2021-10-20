@@ -12,7 +12,7 @@ const HeaderTop = () => {
                 <Row className="border-bottom border-1">
                     <Col lg={4}>
                         <div className="logo pt-3">
-                            <h3><Link to="/"><span className="text-primary">Cure</span>Point</Link></h3>
+                            <h3><Link to="/"><span className="text-info">Cure</span>Point</Link></h3>
                         </div>
                     </Col>
                     <Col lg={8}>

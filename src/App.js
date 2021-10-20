@@ -11,6 +11,7 @@ import AuthProvider from "./context/AuthProvider";
 import Services from "./Pages/Services/Services/Services";
 import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import Details from "./Pages/Services/Details/Details";
+import Lines from "react-preloaders/lib/Lines/Lines";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Home></Home>
           </Route>
           <Route path="/home">
+
             <Home></Home>
           </Route>
           <Route path="/signup">
@@ -36,9 +38,9 @@ function App() {
           <PrivateRoute exact path="/services">
             <Services></Services>
           </PrivateRoute>
-          <Route path="/services/:id">
+          <PrivateRoute path="/services/:id">
             <Details></Details>
-          </Route>
+          </PrivateRoute>
 
           <Route path="*">
             <NotFound></NotFound>

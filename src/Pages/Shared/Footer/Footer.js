@@ -1,3 +1,4 @@
+import { faFacebook, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faAngleRight, faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
@@ -20,9 +21,9 @@ const Footer = () => {
                             <div className="get-in-touch">
                                 <p className="get-in-intro">We are Bangladesh based medical support company. We are dedicated and promised to deliver quality medical service </p>
                                 <ul className="list-unstyled">
-                                    <li><FontAwesomeIcon icon={faMapMarker} className="me-4" /> 25 street avenue, Gulshan</li>
-                                    <li><FontAwesomeIcon icon={faEnvelope} className="me-4" /> mail@curepoint.com</li>
-                                    <li><FontAwesomeIcon icon={faPhone} className="me-4" /> (+088) 555 222 111</li>
+                                    <li><FontAwesomeIcon icon={faMapMarker} className="me-4 text-info" /> 25 street avenue, Gulshan</li>
+                                    <li><FontAwesomeIcon icon={faEnvelope} className="me-4 text-info" /> mail@curepoint.com</li>
+                                    <li><FontAwesomeIcon icon={faPhone} className="me-4 text-info" /> (+088) 555 222 111</li>
 
                                 </ul>
 
@@ -55,7 +56,12 @@ const Footer = () => {
                         </Col>
                         <Col lg={3}>
                             <div>
-                                <h4 className="fs-5 text-uppercase">Our Services</h4>
+                                <h4 className="fs-5 text-uppercase">Social Connect</h4>
+                                <div className="">
+                                    <span className="text-info text-center me-2"><FontAwesomeIcon icon={faFacebook} /> </span>
+                                    <span className="text-info text-center me-2"><FontAwesomeIcon icon={faTwitter} /> </span>
+                                    <span className="text-info text-center me-2"><FontAwesomeIcon icon={faPinterest} /> </span>
+                                </div>
                             </div>
                         </Col>
                         <Col lg={3}>
