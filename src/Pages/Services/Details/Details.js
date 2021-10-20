@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ const Details = () => {
                             <h4 className="my-2">{filteredData[0].name}</h4>
                             <p>{filteredData[0].desc}</p>
                             <Link to="/services"><button className="bg-info border-0 px-4 py-2 text-white rounded-pill text-uppercase fw-bold">Services</button></Link>
-                        </div> : ' '}
+                        </div> : <Spinner animation="grow" />}
                     </Col>
 
                 </Row>
