@@ -1,6 +1,7 @@
 import React from 'react';
 import Services from '../../Services/Services/Services';
 import Banner from '../Banner/Banner';
+import Consultation from '../Consultation/Consultation';
 
 const Home = () => {
     return (
@@ -10,6 +11,9 @@ const Home = () => {
             </section>
             <section className="services mt-4">
                 <Services></Services>
+            </section>
+            <section>
+                <Consultation></Consultation>
             </section>
         </>
     );
