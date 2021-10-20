@@ -12,6 +12,7 @@ import Services from "./Pages/Services/Services/Services";
 import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import Details from "./Pages/Services/Details/Details";
 import Lines from "react-preloaders/lib/Lines/Lines";
+import Appointment from "./Pages/Appointment/Appointment";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/services/:id">
             <Details></Details>
+          </PrivateRoute>
+          <PrivateRoute path="/appointment">
+            <Appointment></Appointment>
           </PrivateRoute>
 
           <Route path="*">

@@ -1,12 +1,10 @@
-.single-service img{
-    width: 345px;
-    height: 260px;
-
+.single-details img{
+    width: 100%;
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .single-service img{
+    .single-details img{
         width: 300px;
         height: 260px;
     

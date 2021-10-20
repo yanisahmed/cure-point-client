@@ -12,9 +12,10 @@ const HeaderNav = () => {
                     {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="me-auto text-uppercase">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/services">Services</Nav.Link>
+                            <Nav.Link as={Link} to="/appointment">Appointment</Nav.Link>
 
                         </Nav>
                     </Navbar.Collapse>

@@ -20,7 +20,7 @@ const NotFound = () => {
                                     <span className="text-info text-center me-2"><FontAwesomeIcon icon={faTwitter} /> </span>
                                     <span className="text-info text-center me-2"><FontAwesomeIcon icon={faPinterest} /> </span>
                                 </div>
-                                <Link to="/"><Button className="bg-info px-4 border-0 mb-4">Go Home</Button></Link>
+                                <Link to="/"><Button variant="info" className="px-4 border-0 mb-4">Go Home</Button></Link>
                             </div>
                         </div>
                     </Col>

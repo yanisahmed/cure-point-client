@@ -56,7 +56,7 @@ const Footer = () => {
                         </Col>
                         <Col lg={3}>
                             <div>
-                                <h4 className="fs-5 text-uppercase">Social Connect</h4>
+                                <h4 className="fs-5 text-uppercase">We're Social</h4>
                                 <div className="">
                                     <span className="text-info text-center me-2"><FontAwesomeIcon icon={faFacebook} /> </span>
                                     <span className="text-info text-center me-2"><FontAwesomeIcon icon={faTwitter} /> </span>

@@ -1,5 +1,8 @@
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Banner.css'
 
 const Banner = () => {
@@ -13,7 +16,11 @@ const Banner = () => {
                         <div className="mt-4">
                             <h1 className="fs-1 fw-bold">We have best Medicare plan option for you</h1>
                             <p>We have bunch of medicare plan and experts to support you in your difficult times and help you to recover quickly.</p>
-                            <button type="button" className="btn btn-info text-white">Learn More</button>
+                            <Link to="/appointment">
+                                <Button variant="info" type="submit" className="text-white text-uppercase">
+                                    <FontAwesomeIcon icon={faPaperPlane} className="text-white me-2" />  Book Appointment
+                                </Button>
+                            </Link>
                         </div>
                     </Col>
                     <Col lg={6}>
