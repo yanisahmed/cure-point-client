@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 const Footer = () => {
 
@@ -34,21 +35,26 @@ const Footer = () => {
                                 <h4 className="fs-5 text-uppercase">Quick Links</h4>
                                 <div className="quick-link">
                                     <ul className="list-unstyled">
+
                                         <li>
                                             <span className="me-4"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></span>
-                                            <a className="text" href="/">Home</a>
+                                            <Link to="/">Home</Link>
                                         </li>
                                         <li>
                                             <span className="me-4"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></span>
-                                            <a className="text" href="/">Services</a>
+                                            <Link to="/services">Services</Link>
                                         </li>
                                         <li>
                                             <span className="me-4"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></span>
-                                            <a className="text" href="/">Login</a>
+                                            <Link to="/appointment">Appointment</Link>
                                         </li>
                                         <li>
                                             <span className="me-4"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></span>
-                                            <a className="text" href="/">Register</a>
+                                            <Link to="/login">Login</Link>
+                                        </li>
+                                        <li>
+                                            <span className="me-4"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></span>
+                                            <Link to="/signup">Register</Link>
                                         </li>
                                     </ul>
                                 </div>
