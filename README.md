@@ -11,9 +11,9 @@
 - *Firebase Authentication*
 
 ## About the Website
-- *One stop medical solution*
-- *Expert physician list*
-- *Medical Tranportaion List*
+- *Firebase Authentication, Appointment functionality*
+- *Login/Registration system and hosted to firebase*
+- *Responsive layout and user can book appointment*
 - *Emergency Medical Support system*
 - *Telemedicine Support*
 
